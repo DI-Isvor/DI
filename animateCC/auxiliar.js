@@ -1,11 +1,11 @@
 var n;
-var pos;
-var status = [];
+var idx;
+var status = [false, false, false];
 
-function activeCheck(n, pos){
-    status[pos] = n; 
+function activeCheck(idx, n){
+    status[idx] = n; 
 }
 
-function consulta(pos){
-    return status[pos]; 
+function consulta(idx){
+    return status[idx]; 
 }
