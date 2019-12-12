@@ -1,5 +1,6 @@
 var n;
 var pos;
+var status = [];
 
 function activeCheck(n, pos){
     status[pos] = n; 
