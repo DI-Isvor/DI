@@ -6,6 +6,6 @@ function activeCheck(n, pos){
     status[pos] = n; 
 }
 
-function consulta(v, pos){
-    v = status[pos]; 
+function consulta(pos){
+    return status[pos]; 
 }
