@@ -1,11 +1,23 @@
-var n;
-var idx;
-var status = [false, false, false];
+var array = [];
+/*array[] = ScormProcessGetValue("cmi.suspend_data");*/
+var index = null;
+var auxiliar = null;
 
-function activeCheck(idx, n){
-    status[idx] = n; 
+
+function clickTest(index, auxiliar){
+	if (auxiliar == true){
+	array[index] = true;
+	
+	}
+	if (auxiliar == false){
+	array[index] = false;
+	
+	}
+	/* ScormProcessSetValue("cmi.suspend_data", array[]); */
+	
+	
 }
 
-function consulta(idx){
-    return status[idx]; 
+function retorno(index){
+	alert(array[index]);
 }
